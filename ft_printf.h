@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/10 17:31:17 by zoukaddo          #+#    #+#             */
-/*   Updated: 2021/12/12 15:23:08 by aamoussa         ###   ########.fr       */
+/*   Created: 2021/12/12 16:47:43 by aamoussa          #+#    #+#             */
+/*   Updated: 2021/12/12 16:47:51 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 # include <unistd.h>
 # include <stdarg.h>
-# include<stdio.h>
 
 int		ft_putchar(int c);
 void	ft_putnbr(long long nb, int *len);

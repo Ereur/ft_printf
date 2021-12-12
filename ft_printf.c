@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/10 14:54:57 by zoukaddo          #+#    #+#             */
-/*   Updated: 2021/12/12 15:45:10 by aamoussa         ###   ########.fr       */
+/*   Created: 2021/12/12 16:48:12 by aamoussa          #+#    #+#             */
+/*   Updated: 2021/12/12 16:48:15 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,12 +79,3 @@ int	ft_printf(const char *str, ...)
 	}
 	return (len);
 }
-
-// int main()
-// {	
-// 	int len;
-// 	len = print(" %p %p ", LONG_MIN, LONG_MAX);
-// 	printf("\nlen : %d\n",len);
-// 	// len = ft_printf(" NULL %s NULL ", NULL);
-// 	// printf("\n%d", len);
-// }
