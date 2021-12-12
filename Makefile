@@ -6,17 +6,16 @@
 #    By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/10 14:50:28 by zoukaddo          #+#    #+#              #
-#    Updated: 2021/12/11 17:11:44 by aamoussa         ###   ########.fr        #
+#    Updated: 2021/12/12 08:28:36 by aamoussa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRC = ft_printf.c ft_putchar.c ft_putnbr.c ft_putstr.c ft_puthexa.c
+SRC = ft_printf.c ft_printf_utils.c
 
 
-
-OBJ = ft_printf.o ft_putchar.o ft_putnbr.o ft_putstr.o ft_puthexa.o
+OBJ = ft_printf.o ft_printf_utils.o
 
 all :$(NAME)
 
