@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 14:54:57 by zoukaddo          #+#    #+#             */
-/*   Updated: 2021/12/12 15:21:44 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/12/12 15:45:10 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,7 @@ static int	ft_specificator(va_list ap, const char *str, int *len)
 	else if (str[0] == 'c')
 		*len += ft_putchar(va_arg(ap, int));
 	else if (str[0] == 'p')
-	{	
-		ft_putstr("0x", len);
 		ft_put_p(va_arg(ap, unsigned long), len);
-	}
 	else if (str[0] == 'i')
 		ft_putnbr(va_arg(ap, int), len);
 	else if (str[0] == 'u')
@@ -71,7 +68,9 @@ int	ft_printf(const char *str, ...)
 		while (*str == '%')
 		{	
 			i = 0;
-			i = ft_specificator(ap, ++str, &len);
+			if (*(++str) == 'p')
+				ft_putstr("0x", &len);
+			i = ft_specificator(ap, str, &len);
 			if (i)
 				++str;
 		}
